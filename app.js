@@ -70,11 +70,8 @@ app.post('/register', (req, res) => {
         }
         whatToSendBack = [`SUCCESS!`, newStudentRecord]
     }
-
     res.send(whatToSendBack)
 })
-
-//POST /register - creates a new user, returns success status in JSON response (meaning you do not need to actually store the user info in a database. You do need to validate that the user supplied username and email)
 
 const port = 3000;
 app.listen(port, () => console.log(`:==: Listening at port: ${port} :==:`))
